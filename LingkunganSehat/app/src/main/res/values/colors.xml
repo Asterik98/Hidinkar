@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00cf49</color>
+    <color name="colorPrimaryDark">#009635</color>
+    <color name="colorAccent">#1b70d8</color>
+    <color name="hipertensi">#f54141</color>
+    <color name="diabetes">#e9ef42</color>
+    <color name="kanker">#3567c9</color>
+</resources>

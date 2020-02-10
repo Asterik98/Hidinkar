@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tips.HomeFragment">
+
+    <!-- Map Here -->
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/home_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        style="@style/Widget.MaterialComponents.CardView"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tips Kesehatan"
+            android:textAlignment="center"
+            android:padding="@dimen/padding_small"
+            style="@style/TextAppearance.MaterialComponents.Headline4"/>
+
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tips_sehat_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_cardview"/>
+
+</RelativeLayout>

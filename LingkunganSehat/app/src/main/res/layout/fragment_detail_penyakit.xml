@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sakit.DetailPenyakitFragment"
+    android:padding="@dimen/padding_normal">
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/list_penyakit_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/card_corner_large"
+        app:cardBackgroundColor="@android:color/holo_red_dark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_small">
+
+            <TextView
+                android:id="@+id/jenis_penyakit_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MaterialComponents.Headline4"
+                android:text="Jenis Penyakit"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/jenis_penyakit_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:text="Subtitle Penyakit"
+                android:textAlignment="center"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/penyakit_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+</LinearLayout>
